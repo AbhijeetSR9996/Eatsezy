@@ -18,7 +18,7 @@ const Cuisines = () => {
 const styles = StyleSheet.create({
   vw:{ 
     marginHorizontal:0,
-    bottom:200, 
+    bottom:0, 
   },
   sv:{
     height:140,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     //width:200,
     top:20,
     marginLeft:1,
-    borderRadius:10
+    borderRadius:10,
   },
   img2:{
     height:120,

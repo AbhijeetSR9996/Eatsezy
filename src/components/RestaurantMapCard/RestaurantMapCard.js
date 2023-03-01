@@ -12,7 +12,7 @@ import { useNavigation } from '@react-navigation/native'
 import { ScreenNames, Server } from '../../global'
 import axios from 'axios'
 import { connect } from 'react-redux'
-import * as UserActions from '../../redux/actions/userActions'
+//import * as UserActions from '../../redux/actions/userActions'
 import SignInModal from '../ModalPleaseSignIn/ModalPleaseSignInCode'
 const RestaurantMapCard = ({
     coverImage,
@@ -37,34 +37,34 @@ const RestaurantMapCard = ({
     const [isSignInModalVisible, setIsSignInModalVisible] = React.useState(false);
     const toggleIsSignInModalVisibility = React.useCallback(() => setIsSignInModalVisible(!isSignInModalVisible));
 
-    const addRestaurantToFavaorite = async () => {
-        if (isSignedIn) {
+    // const addRestaurantToFavaorite = async () => {
+    //     if (isSignedIn) {
 
 
-            if (!liked) {
-                setLoading(true)
-                const data = {
-                    "userId": userId,
-                    "restaurantId": restaurantId
-                }
-                const response = await axios.post(`${Server.BASE_URL}/user/add-restaurant-to-favorites`, data)
-                dispatch(UserActions.setFavorate([...favorite, restaurantId]))
-                setliked(!liked)
-                setLoading(false)
-            } else {
-                setLoading(true)
-                const resp = await axios.put(`${Server.BASE_URL}/user/remove-favorite-restaurant/${userId}`, {
-                    restaurantId: restaurantId
-                })
-                const response = favorite.filter(e => e != restaurantId)
-                dispatch(UserActions.setFavorate(response))
-                setliked(!liked)
-                setLoading(false)
-            }
-        } else {
-            toggleIsSignInModalVisibility()
-        }
-    }
+    //         if (!liked) {
+    //             setLoading(true)
+    //             const data = {
+    //                 "userId": userId,
+    //                 "restaurantId": restaurantId
+    //             }
+    //             const response = await axios.post(`${Server.BASE_URL}/user/add-restaurant-to-favorites`, data)
+    //             dispatch(UserActions.setFavorate([...favorite, restaurantId]))
+    //             setliked(!liked)
+    //             setLoading(false)
+    //         } else {
+    //             setLoading(true)
+    //             const resp = await axios.put(`${Server.BASE_URL}/user/remove-favorite-restaurant/${userId}`, {
+    //                 restaurantId: restaurantId
+    //             })
+    //             const response = favorite.filter(e => e != restaurantId)
+    //             dispatch(UserActions.setFavorate(response))
+    //             setliked(!liked)
+    //             setLoading(false)
+    //         }
+    //     } else {
+    //         toggleIsSignInModalVisibility()
+    //     }
+    // }
     React.useEffect(() => {
         const data = favorite.filter(e => e == restaurantId)
         if (data.length > 0) {

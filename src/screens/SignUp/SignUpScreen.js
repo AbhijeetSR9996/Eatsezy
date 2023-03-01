@@ -10,18 +10,19 @@ import {
   TextInput,
   KeyboardAvoidingView,
   SafeAreaView,
+  placeHolder
 } from 'react-native';
 import FocusAwareStatusBar from '../../components/FocusAwareStatusBar';
 import {styles} from './SignUpStyles';
 import UserSvg from '../../assets/svg/user.svg';
 import PhoneSvg from '../../assets/svg/phone2.svg';
-//import CountryPicker from 'react-native-country-picker-modal';
+import CountryPicker from 'react-native-country-picker-modal';
 import DownArrow from '../../assets/svg/DropDown.svg';
 
 import {globalStyles} from '../../global/globalStyles';
 import TextInputGlobal from '../../components/TextInputGlobal/TextInputGlobal';
 import {Colors, ScreenNames, Server} from '../../global';
-//import CheckBox from '@react-native-community/checkbox';
+import CheckBox from '@react-native-community/checkbox';
 import axios from 'axios';
 import CustomAlert from '../../components/CustomAlert/CusomAlert';
 
@@ -36,7 +37,7 @@ const SignUpScreen = ({navigation}) => {
   const [alertText, setAlertText] = React.useState('');
 
   const goSignIn = () => {
-    navigation.navigate(ScreenNames.LOGIN);
+    navigation.navigate('LoginScreen');
   };
 
   const toggleCountryCodeVisibility = () => {
@@ -87,7 +88,7 @@ const SignUpScreen = ({navigation}) => {
   };
 
   return (
-    <SafeAreaView >
+    <SafeAreaView style={{flex: 1, backgroundColor: Colors.WHITE}}>
       <KeyboardAvoidingView
         style={{flex: 1, backgroundColor: Colors.WHITE, flexGrow: 1}}
         behavior={Platform.OS === 'ios' ? 'padding' : 'null'}
@@ -100,7 +101,7 @@ const SignUpScreen = ({navigation}) => {
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}>
             <View 
-         style={[styles.img,{elevation:8,borderColor:'black'}]}>
+         style={[styles.img,{elevation:0,borderColor:'black'}]}>
               <Image
                 style={styles.img}
                 source={require('../../assets/images/eatsezylogo.gif')}
@@ -110,18 +111,17 @@ const SignUpScreen = ({navigation}) => {
               <Text style={styles.title}>EatsEzy</Text>
             </View>
             <View style={styles.bodyContainer}>
+
               <TextInputGlobal
-                Svg={<UserSvg />}
                 placeHolder={'Name'}
                 state={userName}
                 setState={setUserName}
               />
 
-              {/* <TextInputGlobal
+              <TextInputGlobal
                             Svg={<TouchableOpacity
                                 onPress={toggleCountryCodeVisibility}
                                 style={{ flexDirection: "row", alignItems: "center", marginLeft: 0, }}>
-                             
                                 <CountryPicker
                                     visible={countryCodeVisible}
                                     withCallingCode
@@ -130,64 +130,20 @@ const SignUpScreen = ({navigation}) => {
                                     withFlagButton={true}
                                     withCallingCodeButton
                                     onSelect={onSelect}
-                                    containerButtonStyle={{ marginRight: 5, }}
+                                    containerButtonStyle={{ marginRight: 0 }}
                                     withCloseButton
                                 />
-                                
-                                <DownArrow />
-                                
-                                <PhoneSvg style={{left:7}}/>
                             </TouchableOpacity>}
-                            
                             placeHolder={"Phone Number"}
                             keyboardType="phone-pad"
                             maxLength={10}
                             state={mobileNumber}
                             setState={setMobileNumber}
-                        /> */}
+                        />
 
-              <View style={styles.vwcountry}>
-                <TextInputGlobal
-                  Svg={
-                    <TouchableOpacity
-                      onPress={toggleCountryCodeVisibility}
-                      style={styles.txtin}>
-                      {/* <CountryPicker
-                        visible={countryCodeVisible}
-                        withCallingCode
-                        withFilter
-                        countryCode={selectedCountry}
-                        withFlagButton={true}
-                        withCallingCodeButton
-                        onSelect={onSelect}
-                        containerButtonStyle={{marginRight: 5}}
-                        withCloseButton
-                      /> */}
+            
 
-                      <DownArrow />
-                    </TouchableOpacity>
-                  }
-                />
-              </View>
-
-              <View style={styles.vwphone}>
-                <TextInputGlobal
-                  Svg={
-                    <TouchableOpacity
-                      onPress={toggleCountryCodeVisibility}
-                      style={styles.txtin}>
-                      <PhoneSvg style={{left: 7}} />
-                    </TouchableOpacity>
-                  }
-                  placeHolder={'Phone Number'}
-                  keyboardType="phone-pad"
-                  maxLength={10}
-                  state={mobileNumber}
-                  setState={setMobileNumber}
-                />
-              </View>
-
-              {/* <View style={styles.vw1}>
+              <View style={styles.vw1}>
                 {Platform.OS == 'android' ? (
                   <CheckBox
                     onValueChange={toggleCheckBox}
@@ -212,7 +168,7 @@ const SignUpScreen = ({navigation}) => {
                   <Text style={styles.font1}>I agree with</Text>
                   <Text style={styles.font2}> Terms and Conditions</Text>
                 </View>
-              </View> */}
+              </View>
             {/* <View style={styles.vw}> */}
 
             {/* <Image 
@@ -230,7 +186,7 @@ const SignUpScreen = ({navigation}) => {
               </TouchableOpacity>
 
               <View style={[styles.alignContent, {marginBottom: 40}]}>
-                <Text style={[styles.font1, {marginBottom: -2, left: 5}]}>
+                <Text style={[styles.font1, {marginBottom: 5, left: 5}]}>
                   Already have an account?
                 </Text>
                 <TouchableOpacity
@@ -241,7 +197,7 @@ const SignUpScreen = ({navigation}) => {
                     width: 80,
                     top: -3,
                   }}>
-                  <Text style={[styles.font2, {top: 5, left: 10}]}>
+                  <Text style={[styles.font2, {top: 4, left: 10}]}>
                     Sign In.
                   </Text>
                 </TouchableOpacity>

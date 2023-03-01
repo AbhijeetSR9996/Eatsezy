@@ -1,10 +1,10 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View,ImageBackground,Image } from 'react-native';
+import { StyleSheet, TouchableOpacity, View,Image } from 'react-native';
 //import { connect } from 'react-redux';
-import BellSvg from "../../assets/svg/bell.svg";
-import Bell from '../../assets/images/Bell.png';
-import { Colors, Fonts, ScreenNames } from '../../global';
+//import BellSvg from "../../assets/svg/bell.svg";
+//import Bell from '../../assets/images/Bell.png';
+import { Colors, Fonts, } from '../../global';
 
 
 const HomeHeader = ({ name }) => {
@@ -15,33 +15,32 @@ const HomeHeader = ({ name }) => {
             style={[styles.HeaderContainer,{height:'100%',width:'100%',}]}
             />
             
-            <View >
-                {/*<Text style={styles.font2}>{name ? "Hi " + name : "Hi Guest"}</Text>
-                   <Text style={styles.font3}>Let's see, what's new!</Text>*/}
-            </View>
+            {/* <View >
+                <Text style={styles.font2}>{name ? "Hi " + name : "Hi Guest"}</Text>
+                   <Text style={styles.font3}>Let's see, what's new!</Text>
+            </View> */}
    
             <View>
                 {/* <View style={styles.smallCircle}>
                     <Text style={styles.font1}>3</Text>
                 </View> */}
-                <TouchableOpacity onPress={() => {
-                    navigation.navigate(ScreenNames.NOTIFICATION_SCREEN)}} style={styles.notifyiconstyle} >
-                    {/* <Bell />
-                    <BellSvg style={styles.bell}/> */}
-                    <Image source={require('../../assets/images/notifybell.png')} style={styles.bell} />
+                <TouchableOpacity onPress={() => { navigation.navigate('NotificationScreen')}}
+                style={styles.notifyiconstyle} >
+                    {/* <Bell /> */}
+                    {/* <BellSvg style={styles.bell}/> */}
+                    <Image source={require('../../assets/images/notifybell.png')} 
+                    style={styles.bell} 
+                    />
                 </TouchableOpacity>
-                
-                
-
             </View>
         </View>
     )
 }
-const mapStateToProps = state => ({
-    name: state.user.name
-});
+// const mapStateToProps = state => ({
+//     name: state.user.name
+// });
 
-const mapDispatchToProps = dispatch => ({ dispatch });
+//const mapDispatchToProps = dispatch => ({ dispatch });
 // export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader)
 export default HomeHeader;
 
@@ -90,8 +89,8 @@ const styles = StyleSheet.create({
     bell:{
         //right:40,
         //top:25,
-        backgroundColor:'transparent',
-        //borderColor:'white'
+        //backgroundColor:'transparent',
+        //borderColor:'white',
     },
     notifyiconstyle:{
         backgroundColor:'transparent',

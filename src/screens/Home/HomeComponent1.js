@@ -1,6 +1,6 @@
 import { View, Text,Image,ScrollView,FlatList,StyleSheet,TouchableOpacity } from 'react-native';
 import React from 'react';
-import PinSvg from '../../assets/svg/PinSvg.svg';
+//mport PinSvg from '../../assets/svg/PinSvg.svg';
 //import Dollar from '../../assets/svg/dollar-round.svg';
 import { Colors } from '../../global';
 
@@ -82,7 +82,7 @@ const HomeComponent1 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.pin}/>
+									 {/* <PinSvg style={styles.pin}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
                                      {/* <Dollar style={styles.doll}/> */}
 									 <Image
@@ -109,7 +109,7 @@ const HomeComponent1 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.pin}/>
+									 {/* <PinSvg style={styles.pin}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
                                      {/* <Dollar style={styles.doll}/> */}
 									 <Image
@@ -136,7 +136,7 @@ const HomeComponent1 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.pin}/>
+									 {/* <PinSvg style={styles.pin}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
                                      {/* <Dollar style={styles.doll}/> */}
 									 <Image
@@ -164,7 +164,7 @@ const HomeComponent1 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.pin}/>
+									 {/* <PinSvg style={styles.pin}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
                                      {/* <Dollar style={styles.doll}/> */}
 									 <Image
@@ -189,7 +189,7 @@ const HomeComponent1 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.pin}/>
+									 {/* <PinSvg style={styles.pin}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
                                      {/* <Dollar style={styles.doll}/> */}
 									 <Image
@@ -217,7 +217,7 @@ const HomeComponent1 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.pin}/>
+									 {/* <PinSvg style={styles.pin}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
                                      {/* <Dollar style={styles.doll}/> */}
 									 <Image
@@ -246,8 +246,8 @@ const styles = StyleSheet.create({
 	   backgroundColor:'grey',
 	   height:550,
 	   width:330,
-	   left:-330,
-	   top:760
+	   left:-380,
+	   top:665
 	},	
    sv:{
 	   height:250,

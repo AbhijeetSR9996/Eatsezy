@@ -3,7 +3,7 @@ import {StatusBar,Text,View,StyleSheet,FlatList,Image,Dimensions,Animated,Platfo
 const { width, height } = Dimensions.get('window');
 import { getMovies } from './api';
 import PinSvg from '../../assets/svg/PinSvg.svg';
-import Dollar from '../../assets/svg/dollar-round.svg';
+//import Dollar from '../../assets/svg/dollar-round.svg';
 
 const SPACING = 10;
 const ITEM_SIZE = Platform.OS === 'android' ? width * 0.62 : width * 0.74;

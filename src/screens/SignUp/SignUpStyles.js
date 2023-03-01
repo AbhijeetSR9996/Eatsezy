@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     titleContainer: {
         alignItems: "center",
         //backgroundColor:'grey',
-        marginVertical: 12,
+        marginVertical: 30,
         // height:60,
         zIndex:1
     },
@@ -15,7 +15,8 @@ export const styles = StyleSheet.create({
         fontSize: Fonts.SIZE_35,
         fontFamily: Fonts.BOLD,
         color: Colors.PRIMARY,
-        top:0
+        top:0,
+        fontWeight:'bold'
     },
     bodyContainer: {
         marginHorizontal: 20,
@@ -27,7 +28,7 @@ export const styles = StyleSheet.create({
         // flex: 1,
         justifyContent: "flex-end",
         //backgroundColor:'grey',
-        bottom:80,
+        bottom:0,
         paddingVertical:-20
     },
     bodyTextInputStyle: {
@@ -51,7 +52,6 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         marginLeft: 5,
-        
     },
     font1: {
         fontSize: 16,
@@ -112,7 +112,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row", 
         alignItems: "center",
         // marginBottom:170,
-        bottom:60, 
+        bottom:-35, 
     },
     vwcountry:{
         height:67,
@@ -121,9 +121,9 @@ export const styles = StyleSheet.create({
     },
     vwphone:{
         height:67,
-        width:205,
+        width:238,
         backgroundColor:'white',
-        bottom:67,
+        bottom:-17,
         left:115,
     },
     txtin:{ 

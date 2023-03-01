@@ -33,20 +33,20 @@ export const styles = StyleSheet.create({
 		left:30
 	},
 	seeAllStyle: {
-        top:-43,
-		left:240,
+        top:-33,
+		left:275,
 		justifyContent: "flex-end",
         //backgroundColor:'lime'
 	},
 	seeAllStyle2: {
-        top:635,
-		left:240,
+        top:530,
+		left:275,
 		justifyContent:'flex-end',
 		//backgroundColor:'green'
 	},
 	seeAllStyle3: {
-        top:1225,
-		left:240,
+        top:1165,
+		left:275,
 		justifyContent:'flex-end',
 		//backgroundColor:'lime'
 	},
@@ -72,27 +72,27 @@ export const styles = StyleSheet.create({
 	txthead1:{
 		fontSize:20,
 		fontWeight:'bold',
-		top:-160
+		top:3,
 	},
 	txthead2:{
 		fontSize:20,
 		fontWeight:'bold',
 		position:'absolute',
-		top:1320,
+		top:1240,
 	    left:0
 	},
 	txtheadsmall1:{
 		fontFamily: Fonts.LIGHT,
 		fontSize: 10,
 		color: Colors.GRAY_DARK,
-		top:-160
+		top:0
 	},
 	txtheadsmall2:{
 		fontFamily: Fonts.LIGHT,
 		fontSize: 10,
 		color: Colors.GRAY_DARK,
 		position:'absolute',
-		top:1345
+		top:1267
 	},
 	txtnearme:{ 
 		fontFamily: Fonts.MEDIUM, 
@@ -118,7 +118,7 @@ export const styles = StyleSheet.create({
 		right: 0, 
 		alignItems: "center", 
 		bottom: 5, 
-		top:70 
+		top:70, 
 	},
 	vw4:{ 
 		position: "absolute", 
@@ -152,8 +152,8 @@ export const styles = StyleSheet.create({
 		flex: 1 
 	},
 	filter:{ 
-		bottom:50,
-		left:290
+		bottom:61,
+		left:300,
 	},
     nearme:{
 		backgroundColor: Colors.WHITE, flexDirection: "row", alignItems: "center", elevation: 3,
@@ -167,7 +167,7 @@ export const styles = StyleSheet.create({
 	},
 	sv:{ 
 		//paddingBottom: 1410,
-          height:SCREEN_HEIGHT * 3.45,
+          height:SCREEN_HEIGHT * 2.90,
 	},
     mappin:{
 		height:10,

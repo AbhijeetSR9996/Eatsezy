@@ -2,9 +2,9 @@ import { View, Text,Image,StyleSheet,Animated,Dimensions,ScrollView } from 'reac
 import React from 'react'
 //import { quickLink } from '../../Dummy/Dummy';
 import { Colors, Constants, Fonts, ScreenNames, Server } from '../../global';
-import PinSvg from '../../assets/svg/PinSvg.svg';
+//import PinSvg from '../../assets/svg/PinSvg.svg';
 //import PinSvgWhite from '../../assets/svg/PinSvgWhite.svg';
-import Dollar from '../../assets/svg/dollar-round.svg';
+//import Dollar from '../../assets/svg/dollar-round.svg';
 
 const Cuisines3 = () => { 
   return (
@@ -18,9 +18,9 @@ const Cuisines3 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.svg1}/>
+									 {/* <PinSvg style={styles.svg1}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
-                                     <Dollar style={styles.svg2}/>
+                                     {/* <Dollar style={styles.svg2}/> */}
 									 <Text style={styles.txt5}> Free</Text>
 									<View style={styles.view3}>
 									  <Text style={styles.txt6}> 4.1/5 </Text>
@@ -39,9 +39,9 @@ const Cuisines3 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.svg1}/>
+									 {/* <PinSvg style={styles.svg1}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
-                                     <Dollar style={styles.svg2}/>
+                                     {/* <Dollar style={styles.svg2}/> */}
 									 <Text style={styles.txt5}> Free</Text>
 									<View style={styles.view6}>
 									  <Text style={styles.txt6}> 4.1/5 </Text>
@@ -60,9 +60,9 @@ const Cuisines3 = () => {
 									 <Text style={styles.txt1}>Urban Tadka Dining</Text>
 									 <Text style={styles.txt2}>Nelson Bridge, Singapore</Text>
 									 <Text style={styles.txt3}>Chinese | Asian</Text>
-									 <PinSvg style={styles.svg1}/>
+									 {/* <PinSvg style={styles.svg1}/> */}
 									 <Text style={styles.txt4}> 3 km</Text>
-                                     <Dollar style={styles.svg2}/>
+                                     {/* <Dollar style={styles.svg2}/> */}
 									 <Text style={styles.txt5}> Free</Text>
 									<View style={styles.view9}>
 									  <Text style={styles.txt6}> 4.1/5 </Text>

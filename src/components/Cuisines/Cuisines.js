@@ -24,9 +24,9 @@ const Cuisines = () => {
         <Text style={styles.txt2}>Indian</Text>
         <Image source={require('../../assets/images/dish3.png')} style={styles.img2}/>
         <Text style={styles.txt3}>Arabic</Text>
-        <Image source={require('../../assets/images/dish4.png')} style={styles.img2}/>
+        <Image source={require('../../assets/images/italian.png')} style={styles.img2}/>
         <Text style={styles.txt4}>Italian</Text>
-        <Image source={require('../../assets/images/dish1.png')} style={styles.img2}/>
+        <Image source={require('../../assets/images/dish4.png')} style={styles.img2}/>
         <Text style={styles.txt5}>Asian</Text>
         </ScrollView>
 	</View>

@@ -14,7 +14,7 @@ const Search = ({ search, setSearch, placeHolder, inputText, data, searchBy }) =
     }
     const goSearch = () => {
         if (!inputText) {
-            navigation.navigate(ScreenNames.SEARCH_SCREEN)
+            navigation.navigate('SearchScreen')
         } else {
 
         }
@@ -41,7 +41,6 @@ const Search = ({ search, setSearch, placeHolder, inputText, data, searchBy }) =
                         :
                         <TextInput
                             placeholder={placeHolder}
-                            //placeholderTextColor={Colors.GRAY_DARK}
                             placeholderTextColor={Colors.GRAY_MEDIUM}
                             style={styles.bodyTextInput}
                             onChangeText={onChangeText}
@@ -91,6 +90,7 @@ const styles = StyleSheet.create({
         shadowOffset:{width:0,height:5},
         shadowOpacity:0.8,
         shadowRadius:2,
-        elevation:15,
+        //elevation:15,
+        elevation:1
     },
 });

@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient';
+//import LinearGradient from 'react-native-linear-gradient';
 import { Fonts, ScreenNames } from '../../global';
 
 const AreaCard = ({ item, index }) => {
@@ -19,11 +19,11 @@ const AreaCard = ({ item, index }) => {
                 resizeMode="cover"
 
             />
-            <LinearGradient
+            {/* <LinearGradient
                 locations={[0, 1]}
                 colors={['#ffffff49', '#00000035']}
                 style={styles.linearGradient}>
-            </LinearGradient>
+            </LinearGradient> */}
             <Text style={styles.nameSt} >{item.areaName}</Text>
         </TouchableOpacity>
     )

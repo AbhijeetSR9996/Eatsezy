@@ -84,15 +84,16 @@ const HomeComponent2 = () => {
 
 const styles = StyleSheet.create({
    mainvw:{
-	   backgroundColor:'grey',
+	   backgroundColor:'lime',
 	   height:550,
 	   width:320,
-	   left:-650,
-	   top:1370
+	   left:-705,
+	   top:1295,
 	},
    sv:{
 	   height:250,
-	   backgroundColor:'white'
+	   backgroundColor:'white',
+	   //backgroundColor:'red'
 	},
    vw1:{
 	   width:140,
@@ -122,6 +123,7 @@ const styles = StyleSheet.create({
 	   borderRadius:20,
 	   backgroundColor:'grey',
 	   marginTop:-210,
+	   //left:170,
 	   left:170
 	},
    vw4:{

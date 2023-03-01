@@ -14,12 +14,13 @@ export const styles = StyleSheet.create({
 		fontFamily: Fonts.BOLD,
 		color: Colors.PRIMARY,
 		//marginVertical: 30
-		marginVertical:10
+		marginVertical:10,
+		fontWeight:'bold'
 	},
 	bodyContainer: {
 		marginHorizontal: 20,
 		//marginTop: 40,
-        marginTop:310,
+        marginTop:300,
 		//backgroundColor:'lime',
 		
 	},
@@ -29,7 +30,7 @@ export const styles = StyleSheet.create({
 		marginHorizontal: 20,
 		//backgroundColor:'grey',
 		marginTop:-40,
-		bottom:165
+		bottom:225
 	},
 	bodyTextInputStyle: {
 		height: 47,
@@ -97,9 +98,9 @@ export const styles = StyleSheet.create({
         height:200,
         width:200,
         //backgroundColor:'white',
-        bottom:480,
-        left:80,
-        alignItems:'center',
+        bottom:470,
+        left:95,
+        //alignItems:'center',
 		//elevation:8
     },
 	vw1:{ 
@@ -111,21 +112,24 @@ export const styles = StyleSheet.create({
     },
     vwcountry:{
         height:67,
-        width:125,
+        //width:125,
+		width:135,
         backgroundColor:'white',
-		//marginTop:5
+		//left:10,
+		left:0
     },
     vwphone:{
         height:67,
-        width:205,
+        width:215,
         backgroundColor:'white',
         bottom:67,
-        left:115,
+        left:135,
     },
     txtin:{ 
         flexDirection: "row", 
         alignItems: "center", 
         marginLeft: 0, 
+		top:'30%'
     },
     img:{
         height:200,

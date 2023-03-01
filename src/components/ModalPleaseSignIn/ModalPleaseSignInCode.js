@@ -7,7 +7,7 @@ import CancelSvg from '../../assets/svg/CrossSvgWhite.svg';
 //my imports
 import { styles } from './ModalPleaseSignInStyle';
 import { useNavigation } from '@react-navigation/native';
-import { ScreenNames } from '../../global';
+//import { ScreenNames } from '../../global';
 
 const SignInModal = ({
 	navigateFrom,

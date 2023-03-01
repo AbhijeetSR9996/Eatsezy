@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient';
+//import LinearGradient from 'react-native-linear-gradient';
 import { Fonts, ScreenNames } from '../../global';
 
 const RecommendCard = ({ item }) => {
@@ -19,8 +19,8 @@ const RecommendCard = ({ item }) => {
                 resizeMode="cover"
             // resizeMode={FastImage.resizeMode.cover}
             />
-            <LinearGradient locations={[0, 1.0]} colors={['#ffffff37', '#00000056']} style={styles.linearGradient}>
-            </LinearGradient>
+            {/* <LinearGradient locations={[0, 1.0]} colors={['#ffffff37', '#00000056']} style={styles.linearGradient}>
+            </LinearGradient> */}
             <Text style={styles.nameSt}>{item.recommendationName}</Text>
             <Text style={styles.amt}>{item.amount}</Text>
         </TouchableOpacity>
